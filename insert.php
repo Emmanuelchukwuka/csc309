@@ -1,8 +1,7 @@
-
 <?php
     $server = 'localhost'; // 127.0.0.1
     $username = 'root';
-    $password = 'rootroot';
+    $password = '';
     $db = 'csc309';
 
     // Open a new connection
@@ -14,8 +13,8 @@
     }
 
     // Create a Table
-    $sql = "INSERT INTO users (firstname, lastname, email) 
-    VALUES ('Nwafor', 'Benjamin', 'benjaminn@gmail.com')";
+    $sql = "INSERT INTO users (firstname, lastname, email, gender, date_of_birth) 
+    VALUES ('EMMANUEL', 'OSHINE', emmanuelchukwuka50@gmail.com', 'M', '15-02-2000')";
 
     $result = $con->query($sql);
 
